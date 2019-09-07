@@ -94,8 +94,10 @@ extension ViewController: UICollectionViewDataSource{
 }
 
 extension ViewController: UICollectionViewDelegate{
-
+    
     func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
+        
+        
         let cell = collectionView.cellForItem(at: indexPath) as! MenuCollectionViewCell
         cell.labelMenuTitle.textColor = UIColor.black
         cell.viewActiveIndicator.backgroundColor = #colorLiteral(red: 0.5818830132, green: 0.2156915367, blue: 1, alpha: 1)
